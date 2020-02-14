@@ -1,7 +1,7 @@
 import { FETCH_USERINFO_LOADING, FETCH_USERINFO } from '../actions/searchUserAction';
 
 const initialState = {
-  loading: true,
+  loading: false,
   userName: '',
   userInfo: ''
 };
