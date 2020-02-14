@@ -4,14 +4,17 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+import NameSearch from './NameSearch';
+import UserInfo from './UserInfo';
 
 
 export default function App() {
-  return 
+  return (
     <Router>
+      <NameSearch />
       <Switch>
-        <Route exact parth='/' component={} />
+        <Route exact path='/' component={UserInfo} />
       </Switch>
     </Router>
+  );
 }
-  
