@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import { isLoadingUserInfo, getFetchedUserInfo } from '../selectors/userInfoSelector';
 
 const UserInfo = () => {
-  // const dispatch = useDispatch();
   const loading = useSelector(isLoadingUserInfo);
   const userInfo = useSelector(getFetchedUserInfo);
 

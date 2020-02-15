@@ -1,2 +1,2 @@
-export const isLoadingUserInfo = state => state.loading;
-export const getFetchedUserInfo = state => state.userInfo;
+export const isLoadingUserInfo = state => state.user.loading;
+export const getFetchedUserInfo = state => state.user.userInfo;
