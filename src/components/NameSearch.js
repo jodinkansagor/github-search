@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUserInfo } from '../actions/searchUserAction';
 import { fetchUserRepos } from '../actions/userReposAction';
-import'./NameSearch.css';
+import './NameSearch.css';
 
 const NameSearch = () => {
 
