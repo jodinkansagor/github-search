@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Repos.css';
 
 const Repo = (repo) => (
-  <section>
-    <h1>{repo.name}</h1>
-    <a href={repo.html_url}>Go to the Repo!</a>
+  <section className={styles.repo}>
+    <a href={repo.html_url}><h1>{repo.name}</h1></a>
   </section>
 );
 

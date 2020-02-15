@@ -1,0 +1,22 @@
+ul {
+  padding: 0px;
+}
+
+li {
+    list-style: none;
+  }
+
+.repos {
+
+    a {
+      color: teal;
+    }
+
+    a+h1:hover {
+      cursor: pointer;
+    }
+
+    h1:hover {
+      color: black
+    }
+  }

@@ -3,21 +3,25 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { getFetchedRepoInfo } from '../selectors/repoSelector';
 import Repo from './Repo';
+import styles from './Repos.css';
 
 
 const UserRepos = () => {
   const userRepos = useSelector(getFetchedRepoInfo);
 
   const reposElements = userRepos.map(repo => (
-    <li key={repo.id}>
+    <li className={styles.repoListItem} key={repo.id}>
       <Repo {...repo} />
     </li>
   ));
 
   return (
-    <>
-      {reposElements}
-    </>
+    <section className={styles.repos}>
+      <h1>Repositories</h1>
+      <ul>
+        {reposElements}
+      </ul>
+    </section>
   );
 
 };
