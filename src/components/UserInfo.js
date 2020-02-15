@@ -16,7 +16,7 @@ const UserInfo = () => {
     <h4>Following: {userInfo.following}</h4>
     <h4>Followers: {userInfo.followers}</h4>
     <a href={userInfo.url}>Go to {userInfo.login}&apos;s Github</a>
-  </section > : '';
+  </section > : <img style={{ height: '100vh', display: 'block', margin: 'auto' }} src='https://github.githubassets.com/images/modules/logos_page/Octocat.png' />;
 
   return (
     <>
