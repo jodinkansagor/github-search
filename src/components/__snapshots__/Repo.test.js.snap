@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<section
+  className="repo"
+>
+  <a>
+    <h1 />
+  </a>
+</section>
+`;
