@@ -3,7 +3,7 @@ import { FETCH_USERREPOS_LOADING, FETCH_USERREPOS } from '../actions/userReposAc
 const initialState = {
   loading: false,
   userName: '',
-  userRepos: '',
+  userRepos: [],
 };
 
 export default function reducer(state = initialState, action) {
@@ -11,7 +11,7 @@ export default function reducer(state = initialState, action) {
     case FETCH_USERREPOS_LOADING:
       return { ...state, loading: true };
     case FETCH_USERREPOS:
-      return { ...state, loading: true, userRepos: action.payload };
+      return { ...state, loading: false, userRepos: action.payload };
     default:
       return state;
   }

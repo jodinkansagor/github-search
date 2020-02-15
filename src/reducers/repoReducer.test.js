@@ -13,4 +13,19 @@ describe('repo reducer', () => {
       userRepos: []
     });
   });
+
+  it('handles repo reducer', () => {
+    const action = { 
+      type: FETCH_USERREPOS,
+      payload:  [{ id: '123', name: 'adventure' }, { id: '234', name: 'good times' }]
+    };
+    const initialState = { loading: true, userRepos: [] };
+
+    const newState = reducer(initialState, action);
+
+    expect(newState).toEqual({
+      loading: false,
+      userRepos: [{ id: '123', name: 'adventure' }, { id: '234', name: 'good times' }]
+    });
+  });
 });
