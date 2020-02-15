@@ -1,5 +1,5 @@
-export const getUserInfo = (userName) => {
-  return fetch(`https://cors-anywhere.herokuapp.com/https://api.github.com/users/${userName}`, {
+const request = path => {
+  return fetch(`https://cors-anywhere.herokuapp.com/https://api.github.com/users${path}`, {
     headers: {
       origin: null
     }
@@ -11,3 +11,6 @@ export const getUserInfo = (userName) => {
       return json;
     });
 };
+
+export const getUserInfo = (userName) => request(`/${userName}`);
+export const getUserRepos = (userName) => request(`/${userName}/repos`);
