@@ -9,7 +9,7 @@ const Repo = (repo) => (
 );
 
 Repo.propTypes = {
-  repo: PropTypes.shape
+  repo: PropTypes.any
 };
 
 export default Repo;

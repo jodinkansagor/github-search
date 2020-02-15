@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUserInfo } from '../actions/searchUserAction';
+import { fetchUserRepos } from '../actions/userReposAction';
 
 const NameSearch = () => {
 
@@ -10,6 +11,7 @@ const NameSearch = () => {
   const handleSubmit = event => {
     event.preventDefault();
     dispatch(fetchUserInfo(userName));
+    dispatch(fetchUserRepos(userName));
   };
 
   return (
